@@ -3,7 +3,7 @@ let fbInstance = fizzBuzz();
 
 
 let i = 1;
-while (i < 100) {
+while (i < 101) {
     console.log(fbInstance.fb(i));
     i++
 }
