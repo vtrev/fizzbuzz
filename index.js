@@ -3,11 +3,14 @@ module.exports = function Factory() {
         let fizz = (i % 3) === 0;
         let buzz = (i % 5) === 0;
 
-        if (fizz && !buzz) {
+        if (fizz){
             return 'Fizz'
-        } else if (buzz && !fizz) {
+        }; 
+        if (buzz) {
             return 'Buzz'
-        } else if (fizz && buzz) {
+        }; 
+        
+        if (fizz && buzz) {
             return 'FizzBuzz'
         } else {
             return i
